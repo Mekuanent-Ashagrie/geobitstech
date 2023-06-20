@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "geobitstech/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "geobitstech/wsgi.py"
+      }
+    ]
+}
